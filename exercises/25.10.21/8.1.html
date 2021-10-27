@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>8.1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0px;
+            padding: 0px;
+        }
+        body{
+            background-color: cadetblue;
+            color:white;
+            font-family: Roboto;
+        }
+        .row{
+          max-width:30%;
+            margin:auto;
+        }
+        .row h1{
+            text-align: center;
+            margin:20px;
+        }
+        .btn{
+
+            color:white;
+            border:none;
+            background: none;
+            margin:20px;
+        }
+        .flat-small{
+        font-size: 20px;
+            border: 3px solid  #3d8ae6;
+        background: #3d8ae6;
+
+            padding:5px 25px;
+        }
+        .flat-medium{
+            background: red;
+            border: 3px solid red;
+            font-size:22px;
+            padding:10px 30px;
+        }
+        .flat-big{
+            background: green;
+            border: 3px solid green;
+            font-size:24px;
+
+            padding:15px 45px;
+        }
+        .round-small{
+            font-size: 20px;
+            background: dimgray;
+            border: 3px solid dimgray;
+            padding:5px 25px;
+        }
+        .round-medium{
+            background: gold;
+            border: 3px solid gold;
+            font-size:22px;
+            padding:10px 30px;
+        }
+        .round-big{
+            background: orange;
+            border: 3px solid orange;
+            font-size:24px;
+            padding:15px 45px;
+        }
+        flat {
+        }
+        .ghost{
+            background: none;
+        }
+        .round{
+            border-radius: 30px;
+        }
+        /*.hover2:hover {*/
+        /*    transition: 0.3s;*/
+        /*    background: inherit;*/
+        /*}*/
+        .hover1:hover{
+            transition: 0.3s;
+            filter: brightness(75%)
+        }
+        .hover-yellow:hover{
+            transition: 0.3s;
+            background: gold;
+        }
+        .hover-orange:hover{
+            transition: 0.3s;
+            background: orange;
+        }
+        .hover-red:hover{
+            transition: 0.3s;
+            background: red;
+        }
+        .hover-grey:hover{
+            transition: 0.3s;
+            background: dimgray;
+        }
+        .hover-green:hover{
+            transition: 0.3s;
+            background: green;
+        }
+        .hover-blue:hover{
+            transition: 0.3s;
+            background:  #3d8ae6;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="row">
+            <h1>Flat</h1>
+            <button class="btn flat-big hover1">Register</button>
+            <button class="btn flat-medium hover1">Clear</button>
+            <button class="btn flat-small hover1">Submit</button>
+
+        </div>
+        <div class="row">
+            <h1>Round</h1>
+            <button class="btn round-big round hover1">Register</button>
+            <button class="btn round-medium round hover1">Clear</button>
+            <button class="btn round-small round hover1">Submit</button>
+        </div>
+        <div class="row">
+            <h1>Flat Ghost</h1>
+            <button class="btn flat-big ghost hover-green">Register</button>
+            <button class="btn flat-medium ghost hover-red">Clear</button>
+            <button class="btn flat-small ghost hover-blue">Submit</button>
+        </div>
+        <div class="row">
+            <h1>Round Ghost</h1>
+            <button class="btn round-big ghost round hover-orange">Register</button>
+            <button class="btn round-medium ghost round hover-yellow">Clear</button>
+            <button class="btn round-small ghost round hover-grey">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
