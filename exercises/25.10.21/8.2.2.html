@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8.2</title>
+    <script src="https://kit.fontawesome.com/48c5a7dfc3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color:rgba(148, 225, 203, 0.34) ;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+        .main{
+
+        }
+
+        /* navbar*/
+        .navbar {
+            list-style: none;
+            width:100%;
+            background: cornflowerblue;
+            border-radius: 5px;
+            overflow: auto;
+
+
+        }
+        .navbar li {
+            float:left;
+        }
+        .navbar li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+
+        .nav{
+            background: #3d8ae6;
+            width:100%;
+            display: block;
+            margin: auto;
+            margin-bottom:20px;
+        }
+        /* cards */
+        .custom-card{
+            margin:auto;
+            padding-top:20px;
+            background-color:#f9eebe ;
+            width:50%;
+            box-shadow: 0 20px 20px rgba(8, 8, 8, 0.37);
+            border-radius: 20px;
+        }
+        #profile-pic{
+            width:55%;
+            float:right;
+        }
+        .main-header, #description{
+            padding:15px;
+        }
+        .main-header{
+            color:#545454;
+        }
+        .main-header h1{
+            text-decoration: underline;
+        }
+        #description{
+            margin-top:15px;
+
+            color:#6f24a3;
+            line-height: 20px;
+            text-align: justify;
+        }
+        #description h3{
+            color:#545454;
+        }
+        .header-div{
+
+            width:40%;
+            float:left;
+        }
+        /* content*/
+        .content1{
+             text-align: center;
+            margin:auto;
+        }
+        /* buttons */
+        button{
+            margin-top:10px;
+            padding:10px;
+            border-radius: 10px;
+        }
+
+        .btn {
+            background: none;
+            margin:20px;
+        }
+        .btn1{
+            background: #96D4D4;
+        }
+        .btn2{
+            background: #eab285;
+        }
+        .btn3{
+            background: #8b8bdf;
+        }
+        .btn4{
+            display: inline-block;
+            background: #067f4f;
+
+        }
+        .btn:hover{
+            display: inline-block;
+            transition: 0.5s;
+            filter:brightness(75%);
+        }
+        .btn3:hover{
+            transition: 0.5s;
+            color: white;
+            filter: brightness(100%);
+        }
+        .buttons{
+            margin:auto;
+            text-align:center;
+        }
+        /* footer */
+        #footer{
+            color:#3f2f9d;
+            background-color: #8b8bdf;
+            text-align:center;
+            padding:20px;
+        }
+
+        #footer a {
+
+            margin-left:35px;
+        }
+        #footer i {
+            margin-right:5px;
+        }
+        /* hover */
+
+        .navbar li a:hover {
+            transition: 0.5s;
+            background-color: #446190;
+            color:#f4f4f4;
+        }
+        a:hover{
+            color:#c6fbfb;
+        }
+        .clr{
+            clear:both;
+        }
+    </style>
+</head>
+
+<body>
+<div class="main">
+    <div class="nav">
+    <ul class="navbar">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+    </div>
+    <br>
+    <br>
+    <div class="clr"></div>
+    <div class="custom-card ">
+        <div class="main-header">
+            <div id="profile-pic">
+                <img src="images/profile-pic-round4.png" alt="Profile Pic" style="width:20%">
+            </div>
+            <div  class="header-div">
+                <h1>Dan Karger</h1>
+            </div>
+        </div>
+        <div id="description" class="clr">
+            <h3>Job Title: <strong><em>Programmer</em></strong></h3>
+            <p>I worked as a sound  and lightning technician in teather shows and music concerts,
+                <span class="fun"><strong>It was fun</strong></span> but now it's time to change profession.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam delectus dolore eum inventore ipsam magnam molestias, neque nesciunt quisquam totam.</p>
+            <div class="buttons">
+                <button class="btn btn1" type="button">This button do nothing</button>
+                <button class="btn btn2" type="button">This button also do nothing</button>
+                <button class="btn btn3" type="button">Submit</button>
+            </div>
+        </div>
+        <div class="content1">
+            <button class="btn btn4">Another Button (what does it do?)</button>
+        </div>
+        <br>
+        <br>
+        <div id="footer">
+            <div class="links">
+                <a href="https://www.linkedin.com/in/dan-karger-ba36905a/" target="_blank"><i class="fab fa-linkedin">Linkedin</i></a>
+                <a href="https://soundcloud.com/dankarger/" target="_blank"><i class="fab fa-soundcloud"></i>SoundCloud</a>
+            </div>
+            <div class="copyright">
+                <br>
+                <p>Copyright&copy;2021</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
