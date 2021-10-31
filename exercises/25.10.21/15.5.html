@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>15.5</title>
+</head>
+<style>
+    body {
+        background: lightslategrey;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-items{
+        display: flex;
+
+    }
+    .nav-box, .logo {
+        padding:10px 29px;
+    }
+    .logo {
+        align-self:flex-start
+    }
+    .logo h1 {
+        font-size: 2rem;
+    }
+    @media (max-width: 700px) {
+
+        .navbar {
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
+        .nav-items{
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            align-self: center;
+        }
+        .logo h1 {
+            font-size: 3rem;
+        }
+    }
+</style>
+<body>
+    <div class="navbar">
+
+        <div class="logo"><h1>APPLESEEDS</h1></div>
+        <div class="nav-items">
+        <div class="nav-box">HOME</div>
+        <div class="nav-box">ABOUT</div>
+        <div class="nav-box">PORTFOLIO</div>
+        <div class="nav-box">CONTACT</div>
+        </div>
+    </div>
+</body>
+</html>
