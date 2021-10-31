@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>12.3</title>
+    <style>
+        *{
+
+            box-sizing:border-box;
+        }
+        .outer-box{
+            border:1px solid grey;
+            max-width:80%;
+            margin:auto;
+            padding:4px;
+        }
+        .container{
+            max-width:60%;
+            max-height:100%;
+            text-align:center;
+            margin:auto;
+
+        }
+        header{
+            background-color:#ec9355;
+            margin:auto;
+            text-align:center;
+            padding:30px;
+            border:1px solid grey;
+        }
+        side{
+            background-color:#067f4f;
+            width:calc(30% - 2px);
+            margin: auto;
+            float:left;
+            height:300px;
+            text-align:left;
+            margin-top:3px;
+            margin-bottom:3px;
+            padding:15px;
+            border:1px solid grey;
+        }
+        main{
+            background-color:#a400eb;
+            width:calc(70% - 2px);
+            margin: auto;
+            margin-top:3px;
+            margin-bottom:3px;
+            float:right;
+            height:300px;
+            text-align:right;
+            padding:15px;
+            border:1px solid grey;
+        }
+        .clr{
+            clear:both;
+        }
+        footer{
+            background-color:#3d8ae6;
+            width:100%;
+            margin: auto;
+            height:90%;
+            padding:30px;
+            border:1px solid grey;
+        }
+        /* Bigger */
+        @media (min-width:701px) {
+
+        }
+        /* Smaller */
+        @media (max-width:700px) {
+        side {
+            display: none;
+        }
+            main {
+                width:100%
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="outer-box">
+    <div class="container">
+        <header>
+            Header
+        </header>
+        <side>
+            Side
+        </side>
+        <main>
+            Main
+        </main>
+        <footer class="clr">
+            Footer
+        </footer>
+    </div>
+</div>
+</body>
+</html>
