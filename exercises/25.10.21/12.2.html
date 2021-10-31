@@ -22,24 +22,26 @@
             border:black 1px solid;
             text-align: left;
         }
-        @media (min-width: 501px) and (max-width: 1800px)  {
+        @media (min-width: 701px) and (max-width: 1800px)  {
             .container{
 
             }
             .box {
-
-                display: inline-block;
-                width:200px;
-                height: 200px;
+                float: left;
+                width: 25%;
+                /*padding: 50px;*/
+                text-align: center;
+                /*display: inline-block;*/
+                /*width:200px;*/
+                /*height: 200px;*/
 
 
 
             }
-        @media (max-width: 500px) {
+        @media (max-width: 700px) {
             .box {
-                display: block;
-                width:300px;
-                height: 300px;
+                float: none;
+                width:100%
             }
         }
 
