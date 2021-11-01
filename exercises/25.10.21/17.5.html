@@ -13,20 +13,28 @@
         }
         .tooltip {
             position: relative;
-            margin-bottom: 10px;
+
             color:lightsteelblue;
             position: relative;
 
 
         }
+        .tooltip:before {
+            border: red 1px solid;
+            height: 20px;
+            width: 10px;
+            z-index: 10;
+            position: absolute;
+        }
+
         .tooltip:hover:after{
-            color: black;
+            color: lightslategray;
             content: attr(data-value);
             background: yellow;
             border-radius: 10px;
             padding:10px;
-            bottom:20px;
-            right:20px;
+            bottom:30px;
+            right:-20%;
             z-index: 10;
             position: absolute;
 
