@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>19.3</title>
+    <style>
+
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box{
+            margin: 20px;
+            height:50px;
+            width: 200px;
+            border: 1px solid black;
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+            overflow: hidden;
+            background: transparent;
+
+
+        }
+
+        .translateY::after{
+            content: 'Yeah';
+            padding-top: 10px;
+            font-size: 20px;
+            text-align: center;
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height: 100%;
+            transform: translateY(-100px);
+            transition: all 0.2s ease-in;
+            background-color: red;
+        }
+        .translateY:hover::after{
+            transform: translateY(0px);
+        }
+        /*.translate p {*/
+        /*    position: relative;*/
+        /*    z-index: 200;*/
+        /*    color:black;*/
+        /*}*/
+        .translate{
+
+            color:black;
+
+        }
+        .translate::after {
+            content: '';
+            padding-top: 10px;
+            font-size: 20px;
+            text-align: center;
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height: 100%;
+            transform: translate(-200px);
+            transition: all 1s ease-in;
+            background-color: black;
+            z-index: -13;
+
+        }
+        .translate:hover{
+            transition: 1s ease-in;
+            color:white;
+        }
+        .translate:hover::after {
+            transform: translate(0px);
+
+
+
+        }
+        /*.rotate{*/
+        /*    overflow: visible;*/
+        /*}*/
+        .rotate::after {
+            content: '';
+            position: absolute;
+            background: yellow;
+            z-index: -20;
+            transition: 1s ease-in;
+            top:-150px;
+            left:-50px;
+            height: 100%;
+            width: 100%;
+            transform: rotate(-90deg);
+
+        }
+        .rotate:hover::after {
+            transform: rotate(0deg);
+            top:0;
+            left:0;
+        }
+
+        .scale::after {
+            content: 'Scale&Opacity';
+            color:white;
+            background: black;
+            opacity: 0;
+            transform: scale(10) ;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left:0;
+            padding:15px 0px;
+            text-align: center;
+            font-size: 30px;
+            transition: all 1s ease-in;
+        }
+        .scale:hover::after {
+            transform: scale(1);
+            opacity: 1;
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box rotate">Rotate</div>
+        <div class="box translate">Translate</div>
+        <div class="box translateY">TranslateY</div>
+        <div class="box scale">Scale&Opacity</div>
+
+    </div>
+</body>
+</html>
