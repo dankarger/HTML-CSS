@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>19.2</title>
+    <style>
+        body {
+            padding:200px 500px;
+
+        }
+        .box-1{
+            background: #eab285;
+            width:200px;
+            height:200px;
+            position: relative;
+        }
+        .box-1::after {
+            content: '';
+            position: absolute;
+            background: red;
+            width:200px;
+            height:200px;
+            left:0;
+            top:0;
+            transform: translateX(-200px);
+            transition: 1s;
+        }
+        .box-1:hover::after{
+
+            background: #a400eb;
+            transform: translateX(0px);
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box-1">
+
+    </div>
+</div>
+</body>
+</html>
