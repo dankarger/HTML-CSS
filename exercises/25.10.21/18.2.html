@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>18.2</title>
+    <script src="https://kit.fontawesome.com/48c5a7dfc3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200&display=swap" rel="stylesheet">
+    <style>
+        :root {
+        --max-width:1100px;
+        --primary-color:#5F5449;
+        --secondary-color:#9B6A6C;
+         --third-color:#B09398;
+        --lighter-color:#CEDFD9;
+        --darker-color:#5F5449;
+        --box-1-width:1;
+        --box-2-width:2;
+
+        }
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body{
+            height:1000px;
+            background-color:var(--lighter-color);
+            font-family: 'Montserrat', sans-serif;
+            font-sizet:100%;
+            scroll-snap-type:y mandatory;
+
+        }
+        #main {
+            scroll-snap-align: start;
+        }
+        a {
+            color: inherit;
+        }
+        h1 {
+            font-size: calc(1.3rem + 3.6vw);
+        }
+        h2 {
+            font-size: calc(0.7rem + 3.6vw);
+        }
+        #landing-page {
+            height:100vh;
+            background:var(--lighter-color) url("https://images.pexels.com/photos/15286/pexels-photo.jpg?cs=srgb&dl=pexels-luis-del-r%C3%ADo-15286.jpg&fm=jpg") no-repeat
+            center center/cover;
+            text-align: center;
+            position: relative;
+            padding:30px;
+            padding-top:20vh;
+        }
+        #landing-page h1, #landing-page h2{
+            color:white;
+            margin:1rem;
+            /*vertical-align: middle;*/
+        }
+        #landing-page .arrow {
+            position: absolute;
+            bottom:2vh;
+            left:50vw;
+            font-size: 50px;
+            color:white;
+        }
+        .main{
+
+        }
+
+        /* navbar*/
+        .navbar {
+            list-style: none;
+            width:100%;
+
+            border-radius: 5px;
+            overflow: auto;
+
+        }
+        .navbar li {
+            float:left;
+        }
+        .navbar li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+
+        .nav{
+            background: var(--secondary-color);
+            width:100%;
+            display: block;
+            margin: auto;
+            margin-bottom:20px;
+            position: sticky;
+            top:0;
+
+        }
+        /* cards */
+        .custom-card{
+            margin:auto;
+            padding-top:20px;
+            background-color:#f9eebe ;
+            width:50%;
+            box-shadow: 0 20px 20px rgba(8, 8, 8, 0.37);
+            border-radius: 20px;
+        }
+        #profile-pic{
+            width:55%;
+            float:right;
+        }
+        .main-header, #description{
+            padding:15px;
+        }
+        .main-header{
+            color:#545454;
+        }
+        .main-header h1{
+            text-decoration: underline;
+        }
+        #description{
+            margin-top:15px;
+
+            color:var(--primary-color);
+            line-height: 20px;
+            text-align: justify;
+        }
+        #description h3{
+            color:#131313;
+        }
+        .header-div{
+
+            width:40%;
+            float:left;
+        }
+        /* content*/
+        .content1{
+            text-align: center;
+            margin:auto;
+        }
+        /* buttons */
+        button{
+            margin-top:10px;
+            padding:10px;
+            border-radius: 10px;
+        }
+
+        .btn {
+            background: none;
+            margin:20px;
+        }
+        .btn1{
+            background: var(--primary-color);
+            color:white;
+        }
+        .btn2{
+            background: var(--lighter-color);
+        }
+        .btn3{
+            background: var(--third-color);
+        }
+        .btn4{
+            display: inline-block;
+            background: var(--secondary-color);
+
+        }
+        .btn:hover{
+            display: inline-block;
+            transition: 0.5s;
+            filter:brightness(75%);
+        }
+        .btn3:hover{
+            transition: 0.5s;
+            color: white;
+            filter: brightness(100%);
+        }
+        .buttons{
+            margin:auto;
+            text-align:center;
+        }
+        /* footer */
+        #footer{
+            color:white;
+            background-color: var(--darker-color);
+            text-align:center;
+            padding:20px;
+        }
+
+        #footer a {
+
+            margin-left:35px;
+        }
+        #footer i {
+            margin-right:5px;
+        }
+        /* hover */
+
+        .navbar li a:hover {
+            transition: 0.5s;
+            background-color: #446190;
+            color:#f4f4f4;
+        }
+        a:hover{
+            color:#c6fbfb;
+        }
+        .clr{
+            clear:both;
+        }
+    </style>
+</head>
+
+<body>
+
+<section id="landing-page">
+    <div class="landin-content">
+
+        <h1>Welcome</h1>
+        <h2>Hello</h2>
+        <div class="arrow">
+
+            <a href="#main"> <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </div>
+
+</section>
+<div id="main" class="main">
+    <div class="nav">
+        <ul class="navbar">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="clr"></div>
+    <div class="custom-card ">
+        <div class="main-header">
+            <div id="profile-pic">
+                <img src="images/profile-pic-round4.png" alt="Profile Pic" style="width:20%">
+            </div>
+            <div  class="header-div">
+                <h1>Dan Karger</h1>
+            </div>
+        </div>
+        <div id="description" class="clr">
+            <h3>Job Title: <strong><em>Programmer</em></strong></h3>
+            <p>I worked as a sound  and lightning technician in teather shows and music concerts,
+                <span class="fun"><strong>It was fun</strong></span> but now it's time to change profession.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam delectus dolore eum inventore ipsam magnam molestias, neque nesciunt quisquam totam.</p>
+            <div class="buttons">
+                <button class="btn btn1" type="button">This button do nothing</button>
+                <button class="btn btn2" type="button">This button also do nothing</button>
+                <button class="btn btn3" type="button">Submit</button>
+            </div>
+        </div>
+        <div class="content1">
+            <button class="btn btn4">Another Button (what does it do?)</button>
+        </div>
+        <br>
+        <br>
+        <div id="footer">
+            <div class="links">
+                <a href="https://www.linkedin.com/in/dan-karger-ba36905a/" target="_blank"><i class="fab fa-linkedin">Linkedin</i></a>
+                <a href="https://soundcloud.com/dankarger/" target="_blank"><i class="fab fa-soundcloud"></i>SoundCloud</a>
+            </div>
+            <div class="copyright">
+                <br>
+                <p>Copyright&copy;2021</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
