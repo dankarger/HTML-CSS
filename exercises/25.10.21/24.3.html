@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>24.2</title>
+    <style>
+        .grid {
+            padding: 20px;
+            display: grid;
+            /*grid-template-columns: repeat(4, 1fr);*/
+            grid-template-areas:
+                    'header  header header header header '
+                    'sidebar-1 content  content content sidebar-2 '
+                    'footer footer footer footer footer '
+        ;
+            grid-gap: 1rem;
+        }
+        h1 {
+            display: none;
+            text-align: center;
+        }
+
+        .item {
+            padding: 3rem;
+            border-radius: 20px;
+            color:whitesmoke;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .item-1 {
+            background: #eab285;
+          grid-area: header;
+        }
+
+        .item-2 {
+            background: cadetblue;
+            grid-row: 2/ span 2;
+            grid-area: sidebar-1;
+        }
+        .item-3 {
+            /*height:20rem;*/
+            padding:10rem 0;
+            background: #96D4D4;
+            grid-row: 2/ span 2;
+            grid-area: content;
+        }
+        .item-4 {
+            background: purple;
+            grid-area: sidebar-2;
+        }
+        .item-5 {
+            background: yellow;
+            grid-area: footer;
+        }
+
+
+        @media (min-width: 769px) and (max-width:2800px) {
+            .desktop {
+                display: block;
+            }
+        }
+        @media (min-width: 501px) and (max-width: 768px) {
+            .tablet {
+                display: block;
+
+            }
+            .grid {
+                grid-template-areas:
+                    'header header header '
+                    'sidebar-1 content content '
+                    'sidebar-2 sidebar-2 sidebar-2'
+                    'footer footer footer'
+            ;
+            }
+
+        }
+        @media (min-width: 200px) and (max-width: 500px) {
+            .mobile {
+                display: block;
+            }
+            .grid {
+                grid-template-areas:
+                    'header  '
+                    'sidebar-1 '
+                    'content'
+                    'sidebar-2 '
+                    'footer'
+            ;
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+<h1 class="mobile">Mobile</h1>
+<h1 class="tablet">Tablet</h1>
+<h1 class="desktop">Desktop</h1>
+
+<div class="grid">
+    <div class="item item-1">Header</div>
+    <div class="item item-2">Sidebar</div>
+    <div class="item item-3 ">Content</div>
+    <div class="item item-4">Sidebar2</div>
+    <div class="item item-5">Footer</div>
+</div>
+</body>
+</html>
