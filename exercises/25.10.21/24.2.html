@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>24.2</title>
+    <style>
+        .grid {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+        .item {
+            padding: 3rem;
+            border-radius: 10px;
+        }
+        .item-1 {
+            background: #eab285;
+            grid-column: 1 / span 2;
+        }
+
+        .item-2 {
+            background: cadetblue;
+            grid-column: 3 / span 2;
+        }
+        .item-3 {
+            background: #96D4D4;
+            grid-column: 1 / span 1;
+        }
+        .item-4 {
+            background: purple;
+            grid-column: 2 / span 3;
+        }
+        .item-5 {
+            background: yellow;
+            grid-column: 1 / span 4;
+        }
+    </style>
+
+</head>
+<body>
+<div class="grid">
+    <div class="item item-1">1</div>
+    <div class="item item-2">2</div>
+    <div class="item item-3 ">3</div>
+    <div class="item item-4">4</div>
+    <div class="item item-5">5</div>
+</div>
+</body>
+</html>
