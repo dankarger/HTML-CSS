@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+</head>
+<style>
+
+    h1{
+        display: none;
+    }
+/* Mobile */
+
+@media(max-width: 500px) {
+    body {
+        background: red;
+    }
+    #mobile h1 {
+        display: block;
+    }
+}
+/* Tablet */
+@media(min-width: 501px ) and (max-width: 768px) {
+    body {
+        background: blue;
+    }
+    #tablet h1 {
+        display: block;
+    }
+}
+/* Normal */
+@media(min-width: 769px ) and (max-width: 1200px) {
+    body {
+        background: green;
+    }
+    #normal h1{
+        display: block;
+    }
+}
+
+/* Wide Screen  */
+@media(min-width: 1201px ) {
+    body {
+        background: grey;
+    }
+    #wide-screen h1{
+        display: block;
+    }
+}
+
+</style>
+<body>
+
+<div id="mobile"><h1>Mobile</h1></div>
+<div id="tablet"><h1>Tablet</h1></div>
+<div id="normal"><h1>normal</h1></div>
+<div id="wide-screen"><h1>widescreen</h1></div>
+<link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
+</body>
+</html>
